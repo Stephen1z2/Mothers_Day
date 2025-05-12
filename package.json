@@ -2,7 +2,7 @@
   "name": "mum",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Stephen1z2/Mothers_Day",
+  "homepage": "https://Stephen1z2.github.io/Mothers_Day",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
