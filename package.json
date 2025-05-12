@@ -2,11 +2,11 @@
   "name": "mum",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://stephen1z2.github.io/Mothers_Day",
+  "homepage": "https://Stephen1z2/Mothers_Day",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d  dist --repo https://github.com/Stephen1z2/Mothers_Day.git",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
