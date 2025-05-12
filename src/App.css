@@ -85,3 +85,19 @@ body {
   right: 10px;
   transform: rotate(-10deg);
 }
+
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .card {
+    padding: 1.5em; /* Adjust padding for smaller screens */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .flower {
+    width: 60px; /* Smaller flower size */
+    height: 60px;
+  }
+}

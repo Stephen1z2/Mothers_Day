@@ -19,8 +19,8 @@ const CardContentSection = () => {
       ) : (
         <Card
           sx={{
-            width: '80%', // Take up 80% of the page width
-            height: '70vh', // Take up 70% of the page height
+            width: { xs: '90%', md: '80%' }, // 90% width on small screens, 80% on larger
+            height: { xs: 'auto', md: '70vh' }, // Auto height on small screens
             margin: '0 auto',
             background: 'linear-gradient(135deg, #ffe4e1, #fff0f5)',
             borderRadius: 16,
@@ -71,7 +71,11 @@ const CardContentSection = () => {
                 <Typography
                   variant="h2"
                   gutterBottom
-                  sx={{ color: '#d63384', fontWeight: 'bold' }}
+                  sx={{
+                    color: '#d63384',
+                    fontWeight: 'bold',
+                    fontSize: { xs: '2rem', md: '3rem' }, // Smaller font size on mobile
+                  }}
                 >
                   Happy Mother's Day!
                 </Typography>
@@ -91,8 +95,8 @@ const CardContentSection = () => {
                   variant="contained"
                   sx={{
                     backgroundColor: '#d63384',
-                    fontSize: '1.2rem',
-                    padding: '0.8rem 2rem',
+                    fontSize: { xs: '1rem', md: '1.2rem' }, // Smaller font size on mobile
+                    padding: { xs: '0.6rem 1.5rem', md: '0.8rem 2rem' }, // Adjust padding
                     '&:hover': {
                       backgroundColor: '#ad1457',
                     },

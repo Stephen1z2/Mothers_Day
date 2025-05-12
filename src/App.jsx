@@ -20,10 +20,12 @@ function App() {
         borderRadius: 4,
         padding: 4,
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
-        height: '100vh', // Full page height
+        height: { xs: 'auto', md: '100vh' }, // Full height on larger screens, auto on smaller
         display: 'flex',
+        flexDirection: 'column', // Stack content vertically on smaller screens
         alignItems: 'center',
         justifyContent: 'center',
+        gap: 2, // Add spacing between elements
       }}
     >
       {/* Animated Flowers */}
